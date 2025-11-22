@@ -3,13 +3,13 @@ pipeline {
 
     tools{
         jdk 'jdk17'
-        maven 'maven3'
+        maven 'maven'
     }
 
     stages {
         stage('Code Checkout') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/AbderrahmaneOd/Spring-Boot-Jenkins-CI-CD'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/SINDHU649/Spring-Boot-Jenkins-CI-CD-main.git'
             }
         }
         
